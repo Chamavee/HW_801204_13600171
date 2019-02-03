@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:layout_weight="2"
+            >
+
+            <Button
+                android:id="@+id/btnOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EBE1DD"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:onClick="btnGrayClick" />
+
+            <Button
+                android:id="@+id/btnTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ECCBCA"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:onClick="btnPinkClick"/>
+
+            <Button
+                android:id="@+id/btnThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#74839C"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:onClick="btnBlue1Click"/>
+
+            <Button
+                android:id="@+id/btnFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99A9BF"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:onClick="btnBlue2Click"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#C2CCD5"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:onClick="btnFah1Click"/>
+
+            <Button
+                android:id="@+id/btnFive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F5F5F5"
+                android:layout_weight="1"
+                android:onClick="btnFah2Click"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#EBE1DD"
+        android:layout_alignParentRight="true"
+        android:text="235-225-221"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="//RGB"
+        android:layout_below="@+id/tvOutput"
+        android:layout_alignLeft="@+id/tvOutput"/>
+
+
+
+
+
+
+</RelativeLayout>
